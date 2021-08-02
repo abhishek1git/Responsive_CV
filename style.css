@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{   margin: 0;
+    padding: 0; 
+    font-family:'Poppins',sans-serif;
+     box-sizing: border-box;
+}
+body{
+    background: rgb(183, 204, 67);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+.container .left_side
+{
+    position: relative;
+    padding: 40px;
+    background-color:#1c0d5c;
+}
+
+
+.container
+{
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    max-width: 1000px;
+    min-height: 1000px;
+    background:white;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    box-shadow: 0.35px 55px lightblue;
+    border:2px solid black;
+}
+.porft
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.porft .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.porft .imgBx  img
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.title
+{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    background-color:rgb(255, 62, 3);
+    text-align: center;
+    /* background-color:red; */
+}
+.contact ul
+{
+position: relative;
+}
+.contact ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size:18px;
+    color: aqua;
+}
+.icon1{
+    text-decoration: none;
+}
+.contact ul li span
+{
+    color: white;
+    font-weight: 300;
+}
+
+.main-title
+{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+.skills-section ul li
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.progress-bar
+{
+    width: 100%;
+    height: .4rem;
+    background-color: white;
+    position: relative;
+}
+.progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color:skyblue;
+}
+.c-progress{
+    width:70%;
+
+}
+.python-progress{
+    width:80%;
+
+}
+.java-progress{
+    width:60%;
+    
+
+}
+.javascript-progress{
+    width:60%;
+
+}
+.html-progress{
+    width:90%;
+
+}
+.css-progress{
+    width:80%;
+
+}
+.mysql-progress{
+    width:85%;
+
+}
+.skill-title{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.skills-section ul li .skill-title
+    {
+        display: inline-block;
+        /* width: 30px; */
+        font-size:18px;
+        color: aqua;
+    }
+
+
+
+    .container .right_side
+{
+    position: relative;
+    padding: 40px;
+    background:white;
+}
+.contact ul li .icon1
+{
+    /* display: inline-block; */
+    width: 30px;
+    font-size:18px;
+    color:rgb(61, 69, 189);
+}
+.icon1{
+    text-decoration: none;
+}
+
+
+/*-------- link color------- */
+.col{
+    color: white;
+    text-decoration: none;
+}
+/*-------- link color------- */
+.education{
+    text-decoration: none;
+    color:black;
+    
+}
