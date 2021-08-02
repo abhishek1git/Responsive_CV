@@ -1,39 +1,41 @@
-/* @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900'); */
 *
 {   margin: 0;
     padding: 0; 
-    font-family:'Poppins',sans-serif;
+    font-family:'Roboto',sans-serif;
      box-sizing: border-box;
 }
+
+/*--------------- <body> ----------------- */
 body{
-    background: rgb(183, 204, 67);
+    background: rgb(196, 248, 53);
     display: flex;
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
-
 }
-.container .left_side
+/*------------- .left_side ----------------------- */
+.full_side .left_side
 {
     position: relative;
-    padding: 40px;
+    padding: 50px;
     background-color:#1c0d5c;
 }
-
-
-.container
+/* -------------Both side ----------- */
+.full_side
 {
     position: relative;
     width: 100%;
-    margin: 20px;
+    margin: 30px;
     max-width: 1000px;
     min-height: 1000px;
     background:white;
-    display: grid;
+    display:grid;
     grid-template-columns:1fr 2fr;
-
-    /* box-shadow: 0.35px 55px lightblue; */
-    border:2px solid black;
+}
+@media (max-width:1000px){
+.full_side{
+    margin: 20px;
+    grid-template-columns:repeat(1,1fr);
+    }
 }
 .porft
 {
@@ -108,8 +110,6 @@ position: relative;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-
-
 .skills-section ul li
 {
 display: flex;
@@ -139,8 +139,6 @@ align-items: center;
 }
 .java-progress{
     width:70%;
-    
-
 }
 .javascript-progress{
     width:70%;
@@ -169,21 +167,18 @@ align-items: center;
     {
         display: inline-block;
         /* width: 30px; */
-        font-size:18px;
+        font-size:15px;
         color: aqua;
     }
-
-
-
-    .container .right_side
+.full_side .right_side
 {
     position: relative;
     padding: 40px;
+    margin: 10px;
     background:white;
 }
 .contact ul li .icon1
 {
-    /* display: inline-block; */
     width: 30px;
     font-size:18px;
     color:rgb(61, 69, 189);
@@ -191,16 +186,31 @@ align-items: center;
 .icon1{
     text-decoration: none;
 }
-
-
-/*-------- link color------- */
 .col{
     color: white;
     text-decoration: none;
 }
-/*-------- link color------- */
 .education{
     text-decoration: none;
     color:black;
     
+}
+
+.contact ul li .text
+    {
+        display: inline-block;
+        font-size:15px;
+        color: aqua;
+    }
+    .contact ul li .lang{
+        display: inline-block;
+        font-size:15px;
+    }
+
+
+/* <.right_side heading  */
+.title2{
+    background-color: rgb(255, 62, 3);;
+    color: white;
+    text-align: center;
 }
